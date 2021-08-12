@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 <body>
+    <div class="page-background"></div>
     <div class="page-center">
         <h2>Get Potplayer</h2>
     </div>
@@ -23,9 +24,9 @@
 <style>
 @import url('https://use.sevencdn.com/css2?family=Oswald:wght@200;400&display=swap');
 a,blockquote,body,code,h1,h2,h3,h4,h5,input,li,p,pre,textarea,ul,th,td{font-family:"Helvetica Neue","PingFang SC","Noto Sans SC","Hiragino Sans GB","Microsoft YaHei","Hiragino Kaku Gothic Pro",Meiryo,"Malgun Gothic",sans-serif}
-body {background-image: url(https://www.7ed.net/bing/api);background-size: cover;background-repeat: no-repeat; background-position: 50% 0;background-color: #000;}
+.page-background {position:fixed;bottom:0px;left:0;width:100%;height: 100%; background-image: url(https://www.7ed.net/bing/api);background-size: cover;background-repeat: no-repeat; background-color: #000;z-index: -1;}
 .page-center {margin-top:30vh;width:100%;text-align: center;color:#555;}
-.page-center h2 {color:#fff;font-size: 5.5em;font-family: 'Oswald', sans-serif;text-transform: uppercase;letter-spacing: -1px;font-weight: 600;margin-bottom: 40px;}
+.page-center h2 {color:#fff; font-size: 5.5em; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: 600;}
 .page-foot p {margin-bottom: 40px;margin-top: 40px; color: #fff;}
 .page-foot .links a{text-decoration: none;color:#fff;margin: 20px; padding: 10px; border: 2px solid #fff;}
 .page-foot .links a:hover{color:#555;background-color: #fff;}
@@ -37,4 +38,7 @@ body {background-image: url(https://www.7ed.net/bing/api);background-size: cover
       rgba(0,0,0,0.8) 70%,
       rgba(0,0,0,1) 100%);
   }}
+@media (max-width:768px){
+    .page-center h2 {font-size: 20px;}
+}
 </style>
